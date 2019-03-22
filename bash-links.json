@@ -1,0 +1,8 @@
+[
+    ["bash_aliases.sh", ".bash_aliases"],
+    ["bash_logout.sh", ".bash_logout"],
+    ["bash_profile.sh", ".bash_profile"],
+    ["bashrc.sh", ".bashrc"],
+    ["git-completion.bash", ".git-completion"],
+    ["set-ps1.sh", ".set-ps1"]
+]
