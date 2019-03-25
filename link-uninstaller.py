@@ -5,7 +5,7 @@ from argparse import ArgumentParser, FileType
 from json import load
 from os import remove
 from os.path import isdir, islink, join
-from sys import exit
+from sys import exit, stderr
 
 
 def main():
@@ -47,7 +47,8 @@ def main():
             print(
                 "Skipping {}. Expected list like ['source-file', 'target-file'].".format(
                     str(fp)
-                )
+                ),
+                file=stderr,
             )
             continue
 
