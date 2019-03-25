@@ -12,7 +12,8 @@ positional arguments:
 optional arguments:
   -h, --help    show this help message and exit
   -s, --script  Write a script file to STDOUT instead of executing commands.
-                source and target directories must include trailing '/'.
+                source and target directories must include trailing '/'. Use
+                '${env-name}' if environment variables should be output.
 
 The format for the JSON file is a list of a list of pairs. [["target-link-
 name", "source-file-name"],...]
