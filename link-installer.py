@@ -7,7 +7,7 @@
 #
 # May need to use  --file-reference-choice=FILE_REFERENCE_MODE
 #
-# File names with spaces may cause fail.
+# File names with spaces may fail.
 #
 
 from argparse import ArgumentParser, FileType
@@ -25,7 +25,12 @@ def script_header():
     print("#")
     print("# Use the 'source' command to execute this file.")
     print("#")
+    print("TRG=\"${HOME}\"")
 
+
+def script_footer():
+    print("unset TRG")
+    print()
 
 def script_link(source_f, target_f):
     print("ln -sv {} {}".format(source_f, target_f))
@@ -123,7 +128,7 @@ def main():
             script_link(source_f, target_f)
 
     if not islink:
-        print()
+        script_footer()
 
 
 if __name__ == "__main__":
