@@ -85,9 +85,10 @@ def main():
     target_dir = args.target
     try:
         link_list = load(args.files)
-        args.files.close()
     except UnicodeDecodeError as e:
         exit("    Bad JSON in {}: {}".format(args.files.name, e.reason))
+    finally:
+        args.files.close()
     islink = not args.script
     if len(link_list) == 0:
         exit("    Oops: no files to link")
