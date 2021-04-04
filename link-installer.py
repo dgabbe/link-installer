@@ -25,12 +25,13 @@ def script_header():
     print("#")
     print("# Use the 'source' command to execute this file.")
     print("#")
-    print("TRG=\"${HOME}\"")
+    print('TRG="${HOME}"')
 
 
 def script_footer():
     print("unset TRG")
     print()
+
 
 def script_link(source_f, target_f):
     print("ln -sv {} {}".format(source_f, target_f))
