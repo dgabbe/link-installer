@@ -1,0 +1,5 @@
+[
+    ["dot-gitconfig", ".gitconfig"],
+    ["dot-gitignore_global", ".gitignore_global"],
+    ["dot-stCommitMsg", ".stCommitMsg"]
+]
