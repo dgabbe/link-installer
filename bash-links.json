@@ -4,5 +4,6 @@
     ["bash_profile.sh", ".bash_profile"],
     ["bashrc.sh", ".bashrc"],
     ["git-completion.bash", ".git-completion"],
+    ["profile.sh", ".profile"],
     ["set-ps1.sh", ".set-ps1"]
 ]
